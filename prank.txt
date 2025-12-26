@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>System Scan</title>
+</head>
+
+<body style="text-align:center; font-family:Arial;">
+
+<h2 id="msg">Scanning device…</h2>
+<p id="status">Please wait</p>
+
+<script>
+let steps = [
+  "Connecting to device…",
+  "Checking system files…",
+  "Analyzing data…",
+  "Almost done…"
+];
+
+let i = 0;
+let interval = setInterval(() => {
+  document.getElementById("status").innerText = steps[i];
+  i++;
+  if (i === steps.length) {
+    clearInterval(interval);
+    setTimeout(() => {
+      document.getElementById("msg").innerText = "😂 PRANK!";
+      document.getElementById("status").innerText =
+        "Kirish ka gana sunegaa 😁🤣.";
+    }, 1000);
+  }
+}, 1200);
+</script>
+
+</body>
+</html>
