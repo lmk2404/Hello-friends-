@@ -27,7 +27,7 @@ let interval = setInterval(() => {
     setTimeout(() => {
       document.getElementById("msg").innerText = "😂 PRANK!";
       document.getElementById("status").innerText =
-        "Kirish ka gana sunegaa🤣.";
+        "Relax bro 😄 nothing happened.";
     }, 1000);
   }
 }, 1200);
@@ -35,4 +35,3 @@ let interval = setInterval(() => {
 
 </body>
 </html>
-
